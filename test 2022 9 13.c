@@ -111,7 +111,8 @@
 int main()
 {
 	FILE* pfile;
-	pfile = fopen("test.txt", "w");
+	pfile = fopen("test.txt", "r");
+
 	if (pfile == NULL)
 	{
 		printf("%s\n", strerror(errno));
@@ -120,7 +121,6 @@ int main()
 	{
 		printf("successful\n");
 	}
-
 
 	return 0;
 }
